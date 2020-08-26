@@ -3,25 +3,26 @@ import("TemBot.Lua.TemBotLua")
 --Registering the Temtem Window
 tblua:RegisterTemTemWindow()
 
-tblua:Sleep(1500)
+tblua:Sleep(1000)
 
     while (true) do
-    local RandomSleep = math.random(74, 132)
-    tblua:Sleep(RandomSleep)
             --loop if minimap not detected
             while tblua:IsInWorld() == false do
-            tblua:StopMovement()
+            local sex = math.random(100, 200)
+            tblua:Sleep(sex)
                 --if bot is in fight
                 if tblua:IsInFight() == true then
+                    local Platypet = math.random(100, 200)
+                    tblua:Sleep(Platypet)
                     --Luma check positive (message and notification)
                     if tblua:CheckLuma() == true then
                         tblua:SendTelegramMessage("Luma Found! Waiting...")
                         tblua:TestMessage("Luma Found! Waiting...")
                         tblua:PressKey(0x71)
                     else
-                    local RandomSleepy = math.random(174, 332)
-                    local cr = math.random(1030, 1594)
-                    local RandomRun = math.random(430, 994)
+                    local RandomSleepy = tblua:GetSleepTime()
+                    local cr = tblua:GetSleepTime()
+                    local RandomRun = math.random(100, 300)
                     -- exhausted
                     if tblua:GetPixelColor(276, 631) == "0xFFFFFF" then
                     tblua:Sleep(RandomSleepy)
@@ -121,9 +122,9 @@ tblua:Sleep(1500)
                     end
                    end
                 else
-                    local crx = math.random(1034, 1557)
+                    local crx = tblua:GetSleepTime()
                     local crxxx = math.random(1534, 2857)
-                    local ExpScreen = math.random(1530, 2294)
+                    local ExpScreen = tblua:GetSleepTime()
                     -- Catch screen Release
                     if tblua:GetPixelColor(750, 530) == "0x1CD1D3" then
                     tblua:Sleep(crxxx)
