@@ -53,7 +53,7 @@ if tblua:IsInWorld() == true then
      local securityfefeee = math.random(242, 354)
      tblua:KeyDown(0x28)
      tblua:Sleep(securityfefeee)
-     tblua:KeyUp(0x26)
+     tblua:KeyUp(0x28)
      tblua:KeyDown(0x27)
      tblua:Sleep(securitytopr)
      tblua:KeyUp(0x27)
