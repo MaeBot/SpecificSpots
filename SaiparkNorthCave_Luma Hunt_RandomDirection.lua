@@ -43,7 +43,7 @@ if tblua:IsInWorld() == true then
      tblua:KeyDown(0x25)
      tblua:Sleep(securityleeft)
      tblua:KeyUp(0x25)
-     elseif tblua:GetPixelColor(1175, 80) == "0x002245" then
+     elseif tblua:GetPixelColor(1175, 78) == "0x002245" then
      local securitydown = math.random(621, 945)
      tblua:KeyDown(0x28)
      tblua:Sleep(securitydown)
