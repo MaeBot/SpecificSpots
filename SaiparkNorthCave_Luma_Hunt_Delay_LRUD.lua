@@ -95,10 +95,10 @@ if tblua:IsInWorld() == true then
      tblua:Sleep(securityleft)
      tblua:KeyUp(0x25)
      elseif MovementSwitch == 1 then
-       local lol = math.random(5)
-       if c > lol then
-       local MSD = math.random(8)
-       MovementSwitch = MSD
+       local lol1 = math.random(5)
+       if c > lol1 then
+       local MSD1 = math.random(8)
+       MovementSwitch = MSD1
        c = 0
        else
        local Mov1 = math.random(202, 344)
@@ -113,10 +113,10 @@ if tblua:IsInWorld() == true then
        c = c + 1
        end
      elseif MovementSwitch == 2 then
-       local lol = math.random(5)
-       if c > lol then
-       local MSD = math.random(8)
-       MovementSwitch = MSD
+       local lol2 = math.random(5)
+       if c > lol2 then
+       local MSD2 = math.random(8)
+       MovementSwitch = MSD2
        c = 0
        else
        local Mov3 = math.random(243, 778)
@@ -131,10 +131,10 @@ if tblua:IsInWorld() == true then
        c = c + 1
        end
      elseif MovementSwitch == 3 then
-       local lol = math.random(5)
-       if c > lol then
-       local MSD = math.random(8)
-       MovementSwitch = MSD
+       local lol3 = math.random(5)
+       if c > lol3 then
+       local MSD3 = math.random(8)
+       MovementSwitch = MSD3
        c = 0
        else
        local Mov5 = math.random(442, 1034)
@@ -149,10 +149,10 @@ if tblua:IsInWorld() == true then
        c = c + 1
        end
      elseif MovementSwitch == 4 then
-       local lol = math.random(5)
-       if c > lol then
-       local MSD = math.random(8)
-       MovementSwitch = MSD
+       local lol4 = math.random(5)
+       if c > lol4 then
+       local MSD4 = math.random(8)
+       MovementSwitch = MSD4
        c = 0
        else
        local Mov7 = math.random(247, 1249)
@@ -167,10 +167,10 @@ if tblua:IsInWorld() == true then
        c = c + 1
        end
      elseif MovementSwitch == 5 then
-       local lol = math.random(5)
-       if c > lol then
-       local MSD = math.random(8)
-       MovementSwitch = MSD
+       local lol5 = math.random(5)
+       if c > lol5 then
+       local MSD5 = math.random(8)
+       MovementSwitch = MSD5
        c = 0
        else
        local Mov9 = math.random(247, 1249)
@@ -185,10 +185,10 @@ if tblua:IsInWorld() == true then
        c = c + 1
        end
      elseif MovementSwitch == 6 then
-       local lol = math.random(5)
-       if c > lol then
-       local MSD = math.random(8)
-       MovementSwitch = MSD
+       local lol6 = math.random(5)
+       if c > lol6 then
+       local MSD6 = math.random(8)
+       MovementSwitch = MSD6
        c = 0
        else
        local Mov11 = math.random(202, 344)
@@ -203,10 +203,10 @@ if tblua:IsInWorld() == true then
        c = c + 1
        end
      elseif MovementSwitch == 7 then
-       local lol = math.random(5)
-       if c > lol then
-       local MSD = math.random(8)
-       MovementSwitch = MSD
+       local lol7 = math.random(5)
+       if c > lol7 then
+       local MSD7 = math.random(8)
+       MovementSwitch = MSD7
        c = 0
        else
        local Mov13 = math.random(243, 778)
@@ -221,10 +221,10 @@ if tblua:IsInWorld() == true then
        c = c + 1
        end
      elseif MovementSwitch == 8 then
-       local lol = math.random(5)
-       if c > lol then
-       local MSD = math.random(8)
-       MovementSwitch = MSD
+       local lol8 = math.random(5)
+       if c > lol8 then
+       local MSD8 = math.random(8)
+       MovementSwitch = MSD8
        c = 0
        else
        local Mov15 = math.random(442, 1034)
