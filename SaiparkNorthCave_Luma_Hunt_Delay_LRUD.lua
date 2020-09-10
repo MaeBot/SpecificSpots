@@ -40,9 +40,13 @@ if tblua:IsInWorld() == true then
      t = randpoz
      elseif tblua:GetPixelColor(1215, 100) == "0x002245" then
      local securityleeft = math.random(621, 945)
+     local broo = math.random(142, 254)
      tblua:KeyDown(0x25)
      tblua:Sleep(securityleeft)
      tblua:KeyUp(0x25)
+     tblua:KeyDown(0x28)
+     tblua:Sleep(bro)
+     tblua:KeyUp(0x28)
      elseif tblua:GetPixelColor(1175, 78) == "0x002245" then
      local securitydown = math.random(621, 945)
      local bro = math.random(242, 354)
