@@ -123,12 +123,12 @@ if tblua:IsInWorld() == true then
        else
        local Mov3 = math.random(243, 778)
        local Mov4 = math.random(273, 752)
-       tblua:KeyDown(0x27)
-       tblua:Sleep(Mov3)
-       tblua:KeyUp(0x27)
        tblua:KeyDown(0x25)
-       tblua:Sleep(Mov4)
+       tblua:Sleep(Mov3)
        tblua:KeyUp(0x25)
+       tblua:KeyDown(0x27)
+       tblua:Sleep(Mov4)
+       tblua:KeyUp(0x27)
        c = c + 1
        s = s + 1
        t = t + 1
@@ -180,12 +180,12 @@ if tblua:IsInWorld() == true then
        else
        local Mov9 = math.random(247, 1249)
        local Mov10 = math.random(286, 1288)
-       tblua:KeyDown(0x27)
-       tblua:Sleep(Mov9)
-       tblua:KeyUp(0x27)
        tblua:KeyDown(0x25)
-       tblua:Sleep(Mov10)
+       tblua:Sleep(Mov9)
        tblua:KeyUp(0x25)
+       tblua:KeyDown(0x27)
+       tblua:Sleep(Mov10)
+       tblua:KeyUp(0x27)
        c = c + 1
        s = s + 1
        t = t + 1
