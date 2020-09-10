@@ -39,13 +39,13 @@ if tblua:IsInWorld() == true then
      tblua:Sleep(pozvp)
      t = randpoz
      elseif tblua:GetPixelColor(1215, 100) == "0x002245" then
-     local securityleeft = math.random(1221, 1545)
+     local securityleeft = math.random(621, 945)
      tblua:KeyDown(0x25)
      tblua:Sleep(securityleeft)
      tblua:KeyUp(0x25)
      elseif tblua:GetPixelColor(1175, 50) == "0x002245" then
-     local securitydown = math.random(1021, 1545)
-     local securityfefe = math.random(242, 504)
+     local securitydown = math.random(621, 945)
+     local securityfefe = math.random(242, 354)
      tblua:KeyDown(0x28)
      tblua:Sleep(securityfefe)
      tblua:KeyDown(0x27)
@@ -54,8 +54,8 @@ if tblua:IsInWorld() == true then
      tblua:Sleep(securityfefe)
      tblua:KeyUp(0x28)
      elseif tblua:GetPixelColor(1150, 100) == "0x002245" then
-     local securitytopr = math.random(1221, 1545)
-     local securityfefeee = math.random(242, 504)
+     local securitytopr = math.random(621, 945)
+     local securityfefeee = math.random(242, 354)
      tblua:KeyDown(0x26)
      tblua:Sleep(securityfefeee)
      tblua:KeyDown(0x27)
@@ -64,8 +64,8 @@ if tblua:IsInWorld() == true then
      tblua:Sleep(securityfefeee)
      tblua:KeyUp(0x26)
      elseif tblua:GetPixelColor(1210, 65) == "0x002245" then
-     local securitydowne = math.random(242, 504)
-     local securityleft = math.random(1047, 1301)
+     local securitydowne = math.random(242, 354)
+     local securityleft = math.random(657, 978)
      tblua:KeyDown(0x28)
      tblua:Sleep(securityleft)
      tblua:KeyDown(0x25)
@@ -74,8 +74,8 @@ if tblua:IsInWorld() == true then
      tblua:Sleep(securityleft)
      tblua:KeyUp(0x25)
      elseif tblua:GetPixelColor(1175, 150) == "0x002245" then
-     local securitytop = math.random(1021, 1545)
-     local securityfefee = math.random(242, 504)
+     local securitytop = math.random(621, 985)
+     local securityfefee = math.random(242, 354)
      tblua:KeyDown(0x26)
      tblua:Sleep(securityfefee)
      tblua:KeyDown(0x25)
