@@ -13,10 +13,8 @@ tblua:RegisterTemTemWindow()
 tblua:GetAreaColor()
 
 tblua:Sleep(1000)
-
 MovementSwitch = 1
-c = 0
-s = 0
+
 t = 0
 
 if tblua:IsInWorld() == true then
@@ -96,12 +94,6 @@ if tblua:IsInWorld() == true then
      tblua:Sleep(securityleft)
      tblua:KeyUp(0x25)
      elseif MovementSwitch == 1 then
-       local lol = math.random(5)
-       if c > lol then
-       local MSD = math.random(8)
-       MovementSwitch = MSD
-       c = 0
-       else
        local Mov1 = math.random(202, 344)
        local Mov2 = math.random(167, 321)
        tblua:KeyDown(0x25)
@@ -110,17 +102,8 @@ if tblua:IsInWorld() == true then
        tblua:KeyDown(0x27)
        tblua:Sleep(Mov2)
        tblua:KeyUp(0x27)
-       c = c + 1
-       s = s + 1
        t = t + 1
-       end
      elseif MovementSwitch == 2 then
-       local lolo = math.random(5)
-       if c > lolo then
-       local MSDF = math.random(8)
-       MovementSwitch = MSDF
-       c = 0
-       else
        local Mov3 = math.random(243, 778)
        local Mov4 = math.random(273, 752)
        tblua:KeyDown(0x25)
@@ -129,17 +112,8 @@ if tblua:IsInWorld() == true then
        tblua:KeyDown(0x27)
        tblua:Sleep(Mov4)
        tblua:KeyUp(0x27)
-       c = c + 1
-       s = s + 1
        t = t + 1
-       end
      elseif MovementSwitch == 3 then
-       local lolol = math.random(5)
-       if c > lolol then
-       local MSDR = math.random(8)
-       MovementSwitch = MSDR
-       c = 0
-       else
        local Mov5 = math.random(442, 1034)
        local Mov6 = math.random(402, 1077)
        tblua:KeyDown(0x25)
@@ -148,17 +122,8 @@ if tblua:IsInWorld() == true then
        tblua:KeyDown(0x27)
        tblua:Sleep(Mov6)
        tblua:KeyUp(0x27)
-       c = c + 1
-       s = s + 1
        t = t + 1
-       end
      elseif MovementSwitch == 4 then
-       local lololo = math.random(5)
-       if c > lololo then
-       local MSDY = math.random(8)
-       MovementSwitch = MSDY
-       c = 0
-       else
        local Mov7 = math.random(247, 1249)
        local Mov8 = math.random(286, 1288)
        tblua:KeyDown(0x26)
@@ -167,17 +132,8 @@ if tblua:IsInWorld() == true then
        tblua:KeyDown(0x28)
        tblua:Sleep(Mov8)
        tblua:KeyUp(0x28)
-       c = c + 1
-       s = s + 1
        t = t + 1
-       end
      elseif MovementSwitch == 5 then
-       local lololol = math.random(5)
-       if c > lololol then
-       local MSDI = math.random(8)
-       MovementSwitch = MSDI
-       c = 0
-       else
        local Mov9 = math.random(247, 1249)
        local Mov10 = math.random(286, 1288)
        tblua:KeyDown(0x25)
@@ -186,17 +142,8 @@ if tblua:IsInWorld() == true then
        tblua:KeyDown(0x27)
        tblua:Sleep(Mov10)
        tblua:KeyUp(0x27)
-       c = c + 1
-       s = s + 1
        t = t + 1
-       end
      elseif MovementSwitch == 6 then
-       local lololols = math.random(5)
-       if c > lololols then
-       local MSDIs = math.random(8)
-       MovementSwitch = MSDIs
-       c = 0
-       else
        local Mov11 = math.random(202, 344)
        local Mov12 = math.random(167, 321)
        tblua:KeyDown(0x26)
@@ -205,17 +152,8 @@ if tblua:IsInWorld() == true then
        tblua:KeyDown(0x28)
        tblua:Sleep(Mov12)
        tblua:KeyUp(0x28)
-       c = c + 1
-       s = s + 1
        t = t + 1
-       end
      elseif MovementSwitch == 7 then
-       local lolololse = math.random(5)
-       if c > lolololse then
-       local MSDIse = math.random(8)
-       MovementSwitch = MSDIse
-       c = 0
-       else
        local Mov13 = math.random(243, 778)
        local Mov14 = math.random(273, 752)
        tblua:KeyDown(0x26)
@@ -224,17 +162,8 @@ if tblua:IsInWorld() == true then
        tblua:KeyDown(0x28)
        tblua:Sleep(Mov14)
        tblua:KeyUp(0x28)
-       c = c + 1
-       s = s + 1
        t = t + 1
-       end
      elseif MovementSwitch == 8 then
-       local lolololsed = math.random(5)
-       if c > lolololsed then
-       local MSDIsed = math.random(8)
-       MovementSwitch = MSDIsed
-       c = 0
-       else
        local Mov15 = math.random(442, 1034)
        local Mov16 = math.random(402, 1077)
        tblua:KeyDown(0x26)
@@ -243,10 +172,7 @@ if tblua:IsInWorld() == true then
        tblua:KeyDown(0x28)
        tblua:Sleep(Mov16)
        tblua:KeyUp(0x28)
-       c = c + 1
-       s = s + 1
        t = t + 1
-       end
     end
   end
  end
