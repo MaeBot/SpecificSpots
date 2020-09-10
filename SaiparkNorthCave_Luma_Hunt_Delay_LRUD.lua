@@ -38,6 +38,16 @@ if tblua:IsInWorld() == true then
      local randpoz = math.random(158)
      tblua:Sleep(pozvp)
      t = randpoz
+     elseif tblua:GetPixelColor(1175, 130) == "0x002245" then
+     local securitytop = math.random(621, 945)
+     local securityfefee = math.random(242, 504)
+     tblua:KeyDown(0x26)
+     tblua:Sleep(securityfefee)
+     tblua:KeyDown(0x25)
+     tblua:Sleep(securitytop)
+     tblua:KeyUp(0x25)
+     tblua:Sleep(securityfefee)
+     tblua:KeyUp(0x26)
      elseif tblua:GetPixelColor(1215, 100) == "0x002245" then
      local securityleeft = math.random(421, 645)
      local broo = math.random(142, 254)
@@ -85,16 +95,6 @@ if tblua:IsInWorld() == true then
      tblua:KeyUp(0x28)
      tblua:Sleep(securityleft)
      tblua:KeyUp(0x25)
-     elseif tblua:GetPixelColor(1175, 130) == "0x002245" then
-     local securitytop = math.random(621, 945)
-     local securityfefee = math.random(242, 504)
-     tblua:KeyDown(0x26)
-     tblua:Sleep(securityfefee)
-     tblua:KeyDown(0x25)
-     tblua:Sleep(securitytop)
-     tblua:KeyUp(0x25)
-     tblua:Sleep(securityfefee)
-     tblua:KeyUp(0x26)
      elseif MovementSwitch == 1 then
        local lol = math.random(5)
        if c > lol then
