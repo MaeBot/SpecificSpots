@@ -39,7 +39,7 @@ if tblua:IsInWorld() == true then
      tblua:Sleep(pozvp)
      t = randpoz
      elseif tblua:GetPixelColor(1215, 100) == "0x002245" then
-     local securityleeft = math.random(621, 945)
+     local securityleeft = math.random(421, 645)
      local broo = math.random(142, 254)
      tblua:KeyDown(0x25)
      tblua:Sleep(securityleeft)
@@ -48,7 +48,7 @@ if tblua:IsInWorld() == true then
      tblua:Sleep(bro)
      tblua:KeyUp(0x28)
      elseif tblua:GetPixelColor(1175, 78) == "0x002245" then
-     local securitydown = math.random(621, 945)
+     local securitydown = math.random(421, 645)
      local bro = math.random(242, 354)
      local blbl = math.random(2)
      if blbl == 1 then
@@ -67,7 +67,7 @@ if tblua:IsInWorld() == true then
      tblua:KeyUp(0x25)
      end
      elseif tblua:GetPixelColor(1150, 100) == "0x002245" then
-     local securitytopr = math.random(621, 945)
+     local securitytopr = math.random(421, 645)
      local securityfefeee = math.random(242, 354)
      tblua:KeyDown(0x28)
      tblua:Sleep(securityfefeee)
@@ -77,7 +77,7 @@ if tblua:IsInWorld() == true then
      tblua:KeyUp(0x27)
      elseif tblua:GetPixelColor(1210, 65) == "0x002245" then
      local securitydowne = math.random(242, 354)
-     local securityleft = math.random(647, 981)
+     local securityleft = math.random(447, 681)
      tblua:KeyDown(0x28)
      tblua:Sleep(securityleft)
      tblua:KeyDown(0x25)
@@ -86,7 +86,7 @@ if tblua:IsInWorld() == true then
      tblua:Sleep(securityleft)
      tblua:KeyUp(0x25)
      elseif tblua:GetPixelColor(1175, 150) == "0x002245" then
-     local securitytop = math.random(1021, 1545)
+     local securitytop = math.random(621, 945)
      local securityfefee = math.random(242, 504)
      tblua:KeyDown(0x26)
      tblua:Sleep(securityfefee)
