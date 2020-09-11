@@ -118,45 +118,69 @@ if tblua:IsInWorld() == true then
      tblua:KeyUp(0x25)
      end
      elseif MovementSwitch == 1 then
-       local Mov1 = math.random(114, 644)
+       local Mov1 = math.random(114, 844)
        tblua:KeyDown(0x25)
        tblua:Sleep(Mov1)
        tblua:KeyUp(0x25)
        c = c + 1
        s = s + 1
        t = t + 1
-       local MovS1 = math.random(4)
-       MovementSwitch = MovS1
+       local MovS1 = math.random(3)
+       if MovS1 == 1 then
+       MovementSwitch = 2
+       elseif MovS1 == 2 then
+       MovementSwitch = 3
+       elseif MovS1 == 3 then
+       MovementSwitch = 4
+       end
      elseif MovementSwitch == 2 then
-       local Mov2 = math.random(115, 653)
+       local Mov2 = math.random(115, 853)
        tblua:KeyDown(0x26)
        tblua:Sleep(Mov2)
        tblua:KeyUp(0x26)
        c = c + 1
        s = s + 1
        t = t + 1
-       local MovS2 = math.random(4)
-       MovementSwitch = MovS2
+       local MovS2 = math.random(3)
+       if MovS2 == 1 then
+       MovementSwitch = 1
+       elseif MovS2 == 2 then
+       MovementSwitch = 3
+       elseif MovS2 == 3 then
+       MovementSwitch = 4
+       end
      elseif MovementSwitch == 3 then
-       local Mov3 = math.random(119, 641)
+       local Mov3 = math.random(119, 841)
        tblua:KeyDown(0x27)
        tblua:Sleep(Mov3)
        tblua:KeyUp(0x27)
        c = c + 1
        s = s + 1
        t = t + 1
-       local MovS3 = math.random(4)
-       MovementSwitch = MovS3
+       local MovS3 = math.random(3)
+       if MovS3 == 1 then
+       MovementSwitch = 1
+       elseif MovS3 == 2 then
+       MovementSwitch = 2
+       elseif MovS3 == 3 then
+       MovementSwitch = 4
+       end
      elseif MovementSwitch == 4 then
-       local Mov4 = math.random(112, 649)
+       local Mov4 = math.random(112, 849)
        tblua:KeyDown(0x28)
        tblua:Sleep(Mov4)
        tblua:KeyUp(0x28)
        c = c + 1
        s = s + 1
        t = t + 1
-       local MovS4 = math.random(4)
-       MovementSwitch = MovS4
+       local MovS4 = math.random(3)
+       if MovS4 == 1 then
+       MovementSwitch = 1
+       elseif MovS4 == 2 then
+       MovementSwitch = 2
+       elseif MovS4 == 3 then
+       MovementSwitch = 3
+       end
     end
   end
  end
