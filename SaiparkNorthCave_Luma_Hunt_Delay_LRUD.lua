@@ -37,6 +37,16 @@ if tblua:IsInWorld() == true then
      local randpoz = math.random(158)
      tblua:Sleep(pozvp)
      t = randpoz
+     elseif tblua:GetPixelColor(1200, 160) == "007FB3" then
+     local securityoutright = math.random(10621, 15945)
+     tblua:KeyDown(0x25)
+     tblua:Sleep(securityoutright)
+     tblua:KeyUp(0x25)
+     elseif tblua:GetPixelColor(1215, 150) == "70AB85" then
+     local securityoutdown = math.random(10621, 15945)
+     tblua:KeyDown(0x26)
+     tblua:Sleep(securityoutdown)
+     tblua:KeyUp(0x26)
      elseif tblua:GetPixelColor(1175, 135) == "0x002245" then
      local securitytop = math.random(621, 945)
      local securityfefee = math.random(242, 504)
