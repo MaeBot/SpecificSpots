@@ -51,12 +51,24 @@ if tblua:IsInWorld() == true then
      elseif tblua:GetPixelColor(1215, 100) == "0x002245" then
      local securityleeft = math.random(421, 645)
      local broo = math.random(142, 254)
+     if tblua:GetPixelColor(1180, 110) == "0x18415A" then
+     tblua:KeyDown(0x26)
+     tblua:Sleep(broo)
+     tblua:KeyUp(0x26)
+     tblua:KeyDown(0x27)
+     tblua:Sleep(broo)
+     tblua:KeyUp(0x27)
+     tblua:KeyDown(0x28)
+     tblua:Sleep(securityleeft)
+     tblua:KeyUp(0x28)
+     else
      tblua:KeyDown(0x25)
      tblua:Sleep(securityleeft)
      tblua:KeyUp(0x25)
      tblua:KeyDown(0x28)
-     tblua:Sleep(bro)
+     tblua:Sleep(broo)
      tblua:KeyUp(0x28)
+     end
      elseif tblua:GetPixelColor(1175, 78) == "0x002245" then
      local securitydown = math.random(421, 645)
      local bro = math.random(242, 354)
