@@ -97,7 +97,7 @@ if tblua:IsInWorld() == true then
      elseif tblua:GetPixelColor(1210, 65) == "0x002245" then
      local securitydowne = math.random(242, 354)
      local securityleft = math.random(447, 681)
-     if tblua:GetPixelColor(1180, 110) == "0x18415A" then
+     if tblua:GetPixelColor(1180, 110) == "0x18415A" or tblua:GetPixelColor(1180, 110) == "0x16425C" then
      tblua:KeyDown(0x26)
      tblua:Sleep(securitydowne)
      tblua:KeyUp(0x26)
