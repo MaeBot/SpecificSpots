@@ -39,15 +39,27 @@ if tblua:IsInWorld() == true then
      tblua:Sleep(pozvp)
      t = randpoz
      elseif tblua:GetPixelColor(1200, 160) == "0x007FB3" then
-     local securityoutright = math.random(5621, 10945)
+     local securityoutright = math.random(5621, 8945)
+     local securityoutright2 = math.random(1021, 1545)
      tblua:KeyDown(0x25)
      tblua:Sleep(securityoutright)
      tblua:KeyUp(0x25)
+     tblua:KeyDown(0x25)
+     tblua:KeyDown(0x28)
+     tblua:Sleep(securityoutdown2)
+     tblua:KeyUp(0x25)
+     tblua:KeyUp(0x28)
      elseif tblua:GetPixelColor(1215, 150) == "0x70AB85" then
-     local securityoutdown = math.random(5621, 10945)
+     local securityoutdown = math.random(5621, 8945)
+     local securityoutdown2 = math.random(1021, 1545)
      tblua:KeyDown(0x26)
      tblua:Sleep(securityoutdown)
      tblua:KeyUp(0x26)
+     tblua:KeyDown(0x26)
+     tblua:KeyDown(0x27)
+     tblua:Sleep(securityoutdown2)
+     tblua:KeyUp(0x26)
+     tblua:KeyUp(0x27)
      elseif tblua:GetPixelColor(1175, 78) == "0x002245" then
      if tblua:GetPixelColor(1180, 110) == "0x18415A" or tblua:GetPixelColor(1180, 110) == "0x16425C" then
      local securityez = math.random(421, 645)
