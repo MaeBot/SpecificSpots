@@ -1,4 +1,4 @@
--- Working
+-- Testing
 
 ----------------------------------------------------
 -- Saipark North Cave Random 4 dir : Wait on luma --
@@ -33,7 +33,7 @@ if tblua:IsInWorld() == true then
       tblua:CheckPause()
       tblua:CheckLogout()
     while tblua:IsInWorld() == true do
-     if t > 689 then
+     if t > 489 then
      local pozvp = math.random(32000, 89000)
      local randpoz = math.random(158)
      tblua:Sleep(pozvp)
