@@ -187,7 +187,7 @@ if tblua:IsInWorld() == true then
        tblua:KeyUp(0x28)
        tblua:KeyUp(0x25)
        t = t + 1
-       local MovS5 = math.random(7)
+       local MovS5 = math.random(6)
        if MovS5 == 1 then
        MovementSwitch = 1
        elseif MovS5 == 2 then
@@ -199,8 +199,6 @@ if tblua:IsInWorld() == true then
        elseif MovS5 == 5 then
        MovementSwitch = 6
        elseif MovS5 == 6 then
-       MovementSwitch = 7
-       elseif MovS5 == 7 then
        MovementSwitch = 8
        end
      elseif MovementSwitch == 6 then
@@ -211,7 +209,7 @@ if tblua:IsInWorld() == true then
        tblua:KeyUp(0x28)
        tblua:KeyUp(0x27)
        t = t + 1
-       local MovS6 = math.random(7)
+       local MovS6 = math.random(6)
        if MovS6 == 1 then
        MovementSwitch = 1
        elseif MovS6 == 2 then
@@ -224,8 +222,6 @@ if tblua:IsInWorld() == true then
        MovementSwitch = 5
        elseif MovS6 == 6 then
        MovementSwitch = 7
-       elseif MovS6 == 7 then
-       MovementSwitch = 8
        end
      elseif MovementSwitch == 7 then
        local Mov7 = math.random(117, 665)
@@ -235,7 +231,7 @@ if tblua:IsInWorld() == true then
        tblua:KeyUp(0x26)
        tblua:KeyUp(0x27)
        t = t + 1
-       local MovS7 = math.random(7)
+       local MovS7 = math.random(6)
        if MovS7 == 1 then
        MovementSwitch = 1
        elseif MovS7 == 2 then
@@ -245,10 +241,8 @@ if tblua:IsInWorld() == true then
        elseif MovS7 == 4 then
        MovementSwitch = 4
        elseif MovS7 == 5 then
-       MovementSwitch = 5
-       elseif MovS7 == 6 then
        MovementSwitch = 6
-       elseif MovS7 == 7 then
+       elseif MovS7 == 6 then
        MovementSwitch = 8
        end
      elseif MovementSwitch == 8 then
@@ -259,7 +253,7 @@ if tblua:IsInWorld() == true then
        tblua:KeyUp(0x26)
        tblua:KeyUp(0x25)
        t = t + 1
-       local MovS8 = math.random(7)
+       local MovS8 = math.random(6)
        if MovS8 == 1 then
        MovementSwitch = 1
        elseif MovS8 == 2 then
@@ -271,8 +265,6 @@ if tblua:IsInWorld() == true then
        elseif MovS8 == 5 then
        MovementSwitch = 5
        elseif MovS8 == 6 then
-       MovementSwitch = 6
-       elseif MovS8 == 7 then
        MovementSwitch = 7
        end
     end
