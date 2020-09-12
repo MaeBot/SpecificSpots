@@ -115,6 +115,26 @@ if tblua:IsInWorld() == true then
      tblua:Sleep(securityleft)
      tblua:KeyUp(0x25)
      end
+     elseif tblua:GetPixelColor(1179, 108) == "0x16425C" or tblua:GetPixelColor(1173, 108) == "0x16425C" or tblua:GetPixelColor(1179, 108) == "0x18415A" or tblua:GetPixelColor(1173, 108) == "0x18415A" then
+     local stuckdown = math.random(242, 354)
+     tblua:KeyDown(0x26)
+     tblua:Sleep(stuckdown)
+     tblua:KeyUp(0x26)
+     elseif tblua:GetPixelColor(1179, 97) == "0x16425C" or tblua:GetPixelColor(1173, 97) == "0x16425C" or tblua:GetPixelColor(1179, 97) == "0x18415A" or tblua:GetPixelColor(1173, 97) == "0x18415A" then
+     local stuckup = math.random(242, 354)
+     tblua:KeyDown(0x28)
+     tblua:Sleep(stuckup)
+     tblua:KeyUp(0x28)
+     elseif tblua:GetPixelColor(1182, 105) == "0x16425C" or tblua:GetPixelColor(1182, 100) == "0x16425C" or tblua:GetPixelColor(1182, 105) == "0x18415A" or tblua:GetPixelColor(1182, 100) == "0x18415A" then
+     local stuckright = math.random(242, 354)
+     tblua:KeyDown(0x25)
+     tblua:Sleep(stuckright)
+     tblua:KeyUp(0x25)
+     elseif tblua:GetPixelColor(1171, 105) == "0x16425C" or tblua:GetPixelColor(1171, 100) == "0x16425C" or tblua:GetPixelColor(1171, 105) == "0x18415A" or tblua:GetPixelColor(1171, 100) == "0x18415A" then
+     local stuckleft = math.random(242, 354)
+     tblua:KeyDown(0x27)
+     tblua:Sleep(stuckleft)
+     tblua:KeyUp(0x27)
      elseif MovementSwitch == 1 then
        local Mov1 = math.random(121, 644)
        tblua:KeyDown(0x25)
