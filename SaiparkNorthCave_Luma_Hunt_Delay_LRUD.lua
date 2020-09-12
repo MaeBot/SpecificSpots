@@ -32,8 +32,8 @@ if tblua:IsInWorld() == true then
       tblua:CheckPause()
       tblua:CheckLogout()
     while tblua:IsInWorld() == true do
-     if t > 689 then
-     local pozvp = math.random(32000, 289000)
+     if t > 589 then
+     local pozvp = math.random(32000, 89000)
      local randpoz = math.random(158)
      tblua:Sleep(pozvp)
      t = randpoz
