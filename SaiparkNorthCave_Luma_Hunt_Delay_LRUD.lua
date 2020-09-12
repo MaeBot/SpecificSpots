@@ -45,7 +45,7 @@ if tblua:IsInWorld() == true then
      tblua:KeyUp(0x25)
      tblua:KeyDown(0x25)
      tblua:KeyDown(0x28)
-     tblua:Sleep(securityoutdown2)
+     tblua:Sleep(securityoutright2)
      tblua:KeyUp(0x25)
      tblua:KeyUp(0x28)
      elseif tblua:GetPixelColor(1215, 150) == "0x70AB85" then
