@@ -12,11 +12,12 @@ import ('TemBot.Lua.TemBotLua')
 tblua:RegisterTemTemWindow()
 tblua:GetAreaColor()
 
+botname = "VM1"
+
 tblua:Sleep(1000)
 
 MovementSwitch = 1
-c = 0
-s = 0
+encounter = 0
 t = 0
 
 if tblua:IsInWorld() == true then
@@ -98,8 +99,6 @@ if tblua:IsInWorld() == true then
        tblua:KeyDown(0x25)
        tblua:Sleep(Mov1)
        tblua:KeyUp(0x25)
-       c = c + 1
-       s = s + 1
        t = t + 1
        local MovS1 = math.random(3)
        if MovS1 == 1 then
@@ -114,8 +113,6 @@ if tblua:IsInWorld() == true then
        tblua:KeyDown(0x26)
        tblua:Sleep(Mov2)
        tblua:KeyUp(0x26)
-       c = c + 1
-       s = s + 1
        t = t + 1
        local MovS2 = math.random(3)
        if MovS2 == 1 then
@@ -130,8 +127,6 @@ if tblua:IsInWorld() == true then
        tblua:KeyDown(0x27)
        tblua:Sleep(Mov3)
        tblua:KeyUp(0x27)
-       c = c + 1
-       s = s + 1
        t = t + 1
        local MovS3 = math.random(3)
        if MovS3 == 1 then
@@ -146,8 +141,6 @@ if tblua:IsInWorld() == true then
        tblua:KeyDown(0x28)
        tblua:Sleep(Mov4)
        tblua:KeyUp(0x28)
-       c = c + 1
-       s = s + 1
        t = t + 1
        local MovS4 = math.random(3)
        if MovS4 == 1 then
@@ -171,11 +164,25 @@ if tblua:IsInWorld() == true then
         local Platypet = math.random(50, 150)
         tblua:Sleep(Platypet)
         if tblua:CheckLuma() == true then
-          tblua:SendTelegramMessage("Luma Found! Congratz :D")
-          tblua:TestMessage("Luma Found! Congratz :D")
+          if tblua:GetPixelColor(1045, 100) == "0x1E1E1E" then
+           if tblua:GetPixelColor(777, 65) == "0x1E1E1E" then
+              encounter = encounter + 2
+           else
+              encounter = encounter + 1
+           end
+          end
+          tblua:SendTelegramMessage("Luma Found on " .. tostring(botname) .. " after " .. tostring(encounter) .. " tems encountered !\nCongratulations ! :D")
+          tblua:TestMessage("Luma Found after " .. tostring(encounter) .. " Tems encountered ! Congratulations! :D")
           tblua:PressKey(0x71)
         else
           --Else no Luma, so run away
+          if tblua:GetPixelColor(1045, 100) == "0x1E1E1E" then
+           if tblua:GetPixelColor(777, 65) == "0x1E1E1E" then
+              encounter = encounter + 2
+           else
+              encounter = encounter + 1
+           end
+          end
          while tblua:IsInFight() == true do
           local Nh = math.random(102, 187)
           local Nh1 = math.random(157, 332)
