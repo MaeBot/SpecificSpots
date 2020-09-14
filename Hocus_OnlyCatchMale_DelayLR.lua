@@ -8,7 +8,7 @@ tblua:GetAreaColor()
 
 tblua:Sleep(1500)
 
-if tblua:IsInWorld() == true then
+if tblua:IsInWorld() == true or tblua:IsInFight() == true then
  while(true)
  do
    if tblua:IsInWorld() == true then
