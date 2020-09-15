@@ -52,13 +52,13 @@ if tblua:IsInWorld() == true or tblua:IsInFight() == true then
      tblua:KeyUp(0x28)
      s = math.random(15)
      end
-     elseif tblua:GetPixelColor(1190, 103) == "0x357887" or tblua:GetPixelColor(1190, 103) == "0x143F5A" then
-     local brodxz = math.random(342, 554)
+     elseif tblua:GetPixelColor(1197, 103) == "0x357887" or tblua:GetPixelColor(1190, 103) == "0x143F5A" then
+     local brodxz = math.random(342, 454)
      tblua:KeyDown(0x25)
      tblua:Sleep(brodxz)
      tblua:KeyUp(0x25)
-     elseif tblua:GetPixelColor(1160, 103) == "0x357887" or tblua:GetPixelColor(1163, 103) == "0x143F5A" then
-     local brodxc = math.random(342, 554)
+     elseif tblua:GetPixelColor(1155, 103) == "0x357887" or tblua:GetPixelColor(1163, 103) == "0x143F5A" then
+     local brodxc = math.random(342, 454)
      tblua:KeyDown(0x27)
      tblua:Sleep(brodxc)
      tblua:KeyUp(0x27)
