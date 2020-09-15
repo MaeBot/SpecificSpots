@@ -57,14 +57,14 @@ if tblua:IsInWorld() == true or tblua:IsInFight() == true then
      tblua:KeyDown(0x25)
      tblua:Sleep(brodxz)
      tblua:KeyUp(0x25)
-     elseif tblua:GetPixelColor(1163, 103) == "0x357887" or tblua:GetPixelColor(1163, 103) == "0x143F5A" then
+     elseif tblua:GetPixelColor(1160, 103) == "0x357887" or tblua:GetPixelColor(1163, 103) == "0x143F5A" then
      local brodxc = math.random(342, 554)
      tblua:KeyDown(0x27)
      tblua:Sleep(brodxc)
      tblua:KeyUp(0x27)
      else
-       local Mov1 = math.random(152, 349)
-       local Mov2 = math.random(157, 351)
+       local Mov1 = math.random(222, 409)
+       local Mov2 = math.random(227, 411)
        tblua:KeyDown(0x25)
        tblua:Sleep(Mov1)
        tblua:KeyUp(0x25)
@@ -73,14 +73,16 @@ if tblua:IsInWorld() == true or tblua:IsInFight() == true then
        tblua:KeyUp(0x27)
        t = t + 1
        s = s + 1
-     end
-  end
+    end
+   end
  end
             
     --loop if minimap not detected
     if tblua:IsInWorld() == false then
       tblua:Sleep(100)
       tblua:StopMovement()
+       tblua:KeyUp(0x27)
+       tblua:KeyUp(0x25)
       --if bot is in fight
       if tblua:IsInFight() == true then
         --Luma check positive (message and notification)
