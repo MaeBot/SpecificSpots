@@ -65,7 +65,7 @@ if tblua:IsInWorld() == true or tblua:IsInFight() == true then
      elseif MovementSwitch == 1 then
        local lol = math.random(5)
        if c > lol then
-       local MovementSwitch = math.random(4)
+       local MovementSwitch = math.random(3)
        c = 0
        else
        local Mov1 = math.random(202, 344)
@@ -83,11 +83,11 @@ if tblua:IsInWorld() == true or tblua:IsInFight() == true then
   elseif MovementSwitch == 2 then
        local lolo = math.random(5)
        if c > lolo then
-       local MovementSwitch = math.random(4)
+       local MovementSwitch = math.random(3)
        c = 0
        else
-       local Mov3 = math.random(243, 478)
-       local Mov4 = math.random(273, 452)
+       local Mov3 = math.random(243, 378)
+       local Mov4 = math.random(273, 352)
        tblua:KeyDown(0x27)
        tblua:Sleep(Mov3)
        tblua:KeyUp(0x27)
@@ -101,35 +101,17 @@ if tblua:IsInWorld() == true or tblua:IsInFight() == true then
   elseif MovementSwitch == 3 then
        local lolol = math.random(5)
        if c > lolol then
-       local MovementSwitch = math.random(4)
+       local MovementSwitch = math.random(3)
        c = 0
        else
-       local Mov5 = math.random(142, 534)
-       local Mov6 = math.random(202, 577)
+       local Mov5 = math.random(202, 374)
+       local Mov6 = math.random(205, 377)
        tblua:KeyDown(0x25)
        tblua:Sleep(Mov5)
        tblua:KeyUp(0x25)
        tblua:KeyDown(0x27)
        tblua:Sleep(Mov6)
        tblua:KeyUp(0x27)
-       t = t + 1
-       c = c + 1
-       s = s + 1
-       end
-  elseif MovementSwitch == 4 then
-       local lololol = math.random(5)
-       if c > lololol then
-       local MovementSwitch = math.random(4)
-       c = 0
-       else
-       local Mov9  = math.random(247, 649)
-       local Mov10 = math.random(286, 688)
-       tblua:KeyDown(0x27)
-       tblua:Sleep(Mov9)
-       tblua:KeyUp(0x27)
-       tblua:KeyDown(0x25)
-       tblua:Sleep(Mov10)
-       tblua:KeyUp(0x25)
        t = t + 1
        c = c + 1
        s = s + 1
@@ -171,7 +153,7 @@ if tblua:IsInWorld() == true or tblua:IsInFight() == true then
           local Marco    = tblua:GetSleepTime()
           local Nh       = math.random(127, Marco)
           local Nh1      = math.random(208, Marco)
-          MovementSwitch = math.random(4)
+          MovementSwitch = math.random(3)
           tblua:Sleep(Nh)
           tblua:PressKey(0x38)
           tblua:Sleep(Nh1)
