@@ -5,7 +5,7 @@
 ----- Created by MaeBot for TemBot by NhMarco ------
 ----------------------------------------------------
 
-botname = "Unusual"
+botname = "VM1"
 
 --Importing TemBotLua
 import ('TemBot.Lua.TemBotLua')
@@ -24,6 +24,7 @@ if tblua:IsInWorld() == true or tblua:IsInFight() == true then
  while(true)
  do
    if tblua:IsInWorld() == true then
+      turn = 1
       randomizer = math.random(2)
       if randomizer == 1 then
         local sexy = math.random(1234)
@@ -87,13 +88,13 @@ if tblua:IsInWorld() == true or tblua:IsInFight() == true then
           while tblua:IsInWorld() == false
           do
             if tblua:IsInFight() == true then
-           local RandomSleepy = math.random(474, 832)
+            local RandomSleepy = math.random(474, 832)
               -- exhausted
-                    if tblua:GetPixelColor(276, 631) == "0xFFFFFF" then
-                    tblua:Sleep(RandomSleepy)
-                    tblua:PressKey(0x36)
-                    else
-                    local RandomAtk = math.random(1030, 1594)
+               if tblua:GetPixelColor(276, 631) == "0xFFFFFF" then
+               tblua:Sleep(RandomSleepy)
+               tblua:PressKey(0x36)
+               else
+                local RandomAtk = math.random(1030, 1594)
                 if tblua:GetPixelColor(777, 65) == "0x1E1E1E" then
                  if tblua:GetPixelColor(1045, 100) == "0x1E1E1E" then
                   if turn == 1 then
@@ -108,7 +109,7 @@ if tblua:IsInWorld() == true or tblua:IsInFight() == true then
                   tblua:Sleep(RandomAtk)
                   tblua:PressKey(0x46)
                   turn = turn + 1
-                  elseif t > 1 then
+                  elseif turn > 1 then
                   tblua:Sleep(RandomAtk)
                   tblua:PressKey(0x31)
                   tblua:Sleep(RandomAtk)
@@ -117,7 +118,7 @@ if tblua:IsInWorld() == true or tblua:IsInFight() == true then
                   tblua:PressKey(0x31)
                   tblua:Sleep(RandomAtk)
                   tblua:PressKey(0x46)
-                  t = t + 1
+                  turn = turn + 1
                   end
                  else
                   tblua:Sleep(RandomAtk)
@@ -128,7 +129,6 @@ if tblua:IsInWorld() == true or tblua:IsInFight() == true then
                   tblua:PressKey(0x31)
                   tblua:Sleep(RandomAtk)
                   tblua:PressKey(0x46)
-                  turn = turn + 1
                  end
                 else
                   tblua:Sleep(RandomAtk)
@@ -139,7 +139,6 @@ if tblua:IsInWorld() == true or tblua:IsInFight() == true then
                   tblua:PressKey(0x31)
                   tblua:Sleep(RandomAtk)
                   tblua:PressKey(0x46)
-                  turn = turn + 1
                 end
                end
             else
@@ -202,7 +201,7 @@ if tblua:IsInWorld() == true or tblua:IsInFight() == true then
                         tblua:Sleep(crx)
                     end
             end
-	  end
+      end
         end
       end
     end
