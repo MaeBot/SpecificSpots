@@ -1,7 +1,7 @@
 -- Testing
 
 ----------------------------------------------------
------ Random 4 ways Green Grass : Wait on luma -----
+----- Random 8 ways Green Grass : Wait on luma -----
 ----- Created by MaeBot for TemBot by NhMarco ------
 ----------------------------------------------------
 
