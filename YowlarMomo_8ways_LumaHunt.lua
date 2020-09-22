@@ -1,7 +1,7 @@
 -- Testing
 
 ----------------------------------------------------
--- Random 4 ways Yawlar Momo Spot: Wait on luma --
+-- Random 4 ways Yowlar Momo Spot: Wait on luma --
 ----- Created by MaeBot for TemBot by NhMarco ------
 ----------------------------------------------------
 
