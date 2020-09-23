@@ -1,7 +1,7 @@
 -- Testing
 
 ----------------------------------------------------
------ Random 8 ways Green Grass : Wait on luma -----
+---- Random 4 ways Saipark Grass : Wait on luma ----
 ----- Created by MaeBot for TemBot by NhMarco ------
 ----------------------------------------------------
 
@@ -42,7 +42,7 @@ if tblua:IsInWorld() == true or tblua:IsInFight() == true then
      else
       if randmov == 1 then
        if tblua:GetPixelColor(1160, 103) == "0x70AB85" then
-       local rand1 = math.random(150, 300)
+       local rand1 = math.random(200, 300)
        tblua:KeyDown(0x25)
        tblua:Sleep(rand1)
        tblua:KeyUp(0x25)
@@ -83,7 +83,7 @@ if tblua:IsInWorld() == true or tblua:IsInFight() == true then
        end
       elseif randmov == 2 then
        if tblua:GetPixelColor(1192, 103) == "0x70AB85" then
-       local rand2 = math.random(150, 300)
+       local rand2 = math.random(200, 300)
        tblua:KeyDown(0x27)
        tblua:Sleep(rand2)
        tblua:KeyUp(0x27)
@@ -124,7 +124,7 @@ if tblua:IsInWorld() == true or tblua:IsInFight() == true then
        end
       elseif randmov == 3 then
        if tblua:GetPixelColor(1176, 87) == "0x70AB85" then
-       local rand3 = math.random(150, 300)
+       local rand3 = math.random(200, 300)
        tblua:KeyDown(0x26)
        tblua:Sleep(rand3)
        tblua:KeyUp(0x26)
@@ -165,7 +165,7 @@ if tblua:IsInWorld() == true or tblua:IsInFight() == true then
        end
       elseif randmov == 4 then
        if tblua:GetPixelColor(1176, 119) == "0x70AB85" then
-       local rand4 = math.random(150, 300)
+       local rand4 = math.random(200, 300)
        tblua:KeyDown(0x28)
        tblua:Sleep(rand4)
        tblua:KeyUp(0x28)
@@ -206,7 +206,7 @@ if tblua:IsInWorld() == true or tblua:IsInFight() == true then
        end
       elseif randmov == 5 then
        if tblua:GetPixelColor(1189, 115) == "0x70AB85" then
-       local rand5 = math.random(150, 300)
+       local rand5 = math.random(200, 300)
        tblua:KeyDown(0x28)
        tblua:KeyDown(0x27)
        tblua:Sleep(rand5)
@@ -249,10 +249,10 @@ if tblua:IsInWorld() == true or tblua:IsInFight() == true then
        end
       elseif randmov == 6 then
        if tblua:GetPixelColor(1163, 115) == "0x70AB85" then
-       local rand6 = math.random(150, 300)
+       local rand6 = math.random(200, 300)
        tblua:KeyDown(0x28)
        tblua:KeyDown(0x25)
-       tblua:Sleep(rand5)
+       tblua:Sleep(rand6)
        tblua:KeyUp(0x28)
        tblua:KeyUp(0x25)
        t = t + 1
@@ -292,10 +292,10 @@ if tblua:IsInWorld() == true or tblua:IsInFight() == true then
        end
       elseif randmov == 7 then
        if tblua:GetPixelColor(1163, 91) == "0x70AB85" then
-       local rand7 = math.random(150, 300)
+       local rand7 = math.random(200, 300)
        tblua:KeyDown(0x26)
        tblua:KeyDown(0x25)
-       tblua:Sleep(rand5)
+       tblua:Sleep(rand7)
        tblua:KeyUp(0x26)
        tblua:KeyUp(0x25)
        t = t + 1
@@ -335,10 +335,10 @@ if tblua:IsInWorld() == true or tblua:IsInFight() == true then
        end
       elseif randmov == 8 then
        if tblua:GetPixelColor(1189, 91) == "0x70AB85" then
-       local rand8 = math.random(150, 300)
+       local rand8 = math.random(200, 300)
        tblua:KeyDown(0x26)
        tblua:KeyDown(0x27)
-       tblua:Sleep(rand5)
+       tblua:Sleep(rand8)
        tblua:KeyUp(0x26)
        tblua:KeyUp(0x27)
        t = t + 1
