@@ -64,7 +64,7 @@ if tblua:IsInWorld() == true or tblua:IsInFight() == true then
      tblua:KeyUp(0x27)
      else
       if randmov == 1 then
-      if tblua:GetPixelColor(1160, 103) == "0x347984" then
+      if tblua:GetPixelColor(1149, 103) == "0x347984" then
        local Mov1 = math.random(121, 594)
        tblua:KeyDown(0x25)
        tblua:Sleep(Mov1)
@@ -105,7 +105,7 @@ if tblua:IsInWorld() == true or tblua:IsInFight() == true then
         end
        end
       elseif randmov == 2 then
-       if tblua:GetPixelColor(1176, 87) == "0x347984" then
+       if tblua:GetPixelColor(1176, 76) == "0x347984" then
        local Mov2 = math.random(123, 593)
        tblua:KeyDown(0x26)
        tblua:Sleep(Mov2)
@@ -146,7 +146,7 @@ if tblua:IsInWorld() == true or tblua:IsInFight() == true then
         end
        end
       elseif randmov == 3 then
-       if tblua:GetPixelColor(1192, 103) == "0x347984" then
+       if tblua:GetPixelColor(1203, 103) == "0x347984" then
        local Mov3 = math.random(114, 591)
        tblua:KeyDown(0x27)
        tblua:Sleep(Mov3)
@@ -187,7 +187,7 @@ if tblua:IsInWorld() == true or tblua:IsInFight() == true then
         end
        end
       elseif randmov == 4 then
-       if tblua:GetPixelColor(1176, 119) == "0x347984" then
+       if tblua:GetPixelColor(1176, 130) == "0x347984" then
        local Mov4 = math.random(121, 589)
        tblua:KeyDown(0x28)
        tblua:Sleep(Mov4)
@@ -228,7 +228,7 @@ if tblua:IsInWorld() == true or tblua:IsInFight() == true then
         end
        end
       elseif randmov == 5 then
-       if tblua:GetPixelColor(1163, 115) == "0x347984" then
+       if tblua:GetPixelColor(1152, 127) == "0x347984" then
        local Mov5 = math.random(118, 594)
        tblua:KeyDown(0x28)
        tblua:KeyDown(0x25)
@@ -271,7 +271,7 @@ if tblua:IsInWorld() == true or tblua:IsInFight() == true then
         end
        end
       elseif randmov == 6 then
-       if tblua:GetPixelColor(1189, 115) == "0x347984" then
+       if tblua:GetPixelColor(1200, 127) == "0x347984" then
        local Mov6 = math.random(124, 592)
        tblua:KeyDown(0x28)
        tblua:KeyDown(0x27)
@@ -314,7 +314,7 @@ if tblua:IsInWorld() == true or tblua:IsInFight() == true then
         end
        end
       elseif randmov == 7 then
-       if tblua:GetPixelColor(1189, 91) == "0x347984" then
+       if tblua:GetPixelColor(1200, 79) == "0x347984" then
        local Mov7 = math.random(117, 595)
        tblua:KeyDown(0x26)
        tblua:KeyDown(0x27)
@@ -357,7 +357,7 @@ if tblua:IsInWorld() == true or tblua:IsInFight() == true then
         end
        end
       elseif randmov == 8 then
-       if tblua:GetPixelColor(1163, 91) == "0x347984" then
+       if tblua:GetPixelColor(1152, 79) == "0x347984" then
        local Mov8 = math.random(121, 598)
        tblua:KeyDown(0x26)
        tblua:KeyDown(0x25)
