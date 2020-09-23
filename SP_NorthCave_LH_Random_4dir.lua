@@ -16,7 +16,7 @@ tblua:GetAreaColor()
 
 tblua:Sleep(1000)
 
-MovementSwitch = 1
+randmov = 3
 encounter = 0
 t = 0
 
@@ -61,95 +61,108 @@ if tblua:IsInWorld() == true or tblua:IsInFight() == true then
      tblua:Sleep(securityoutdown2)
      tblua:KeyUp(0x26)
      tblua:KeyUp(0x27)
-     elseif tblua:GetPixelColor(1175, 78) == "0x002245" then
-     if tblua:GetPixelColor(1180, 110) == "0x18415A" or tblua:GetPixelColor(1180, 110) == "0x16425C" then
-     local securityez = math.random(421, 645)
-     local broz = math.random(242, 354)
-     tblua:KeyDown(0x26)
-     tblua:Sleep(broz)
-     tblua:KeyUp(0x26)
-     tblua:KeyDown(0x27)
-     tblua:Sleep(broz)
-     tblua:KeyUp(0x27)
-     tblua:KeyDown(0x28)
-     tblua:Sleep(securityez)
-     tblua:KeyUp(0x28)
      else
-     local securitydown = math.random(421, 645)
-     local bro = math.random(242, 354)
-     local blbl = math.random(2)
-     if blbl == 1 then
-     tblua:KeyDown(0x28)
-     tblua:Sleep(securitydown)
-     tblua:KeyUp(0x28)
-     tblua:KeyDown(0x27)
-     tblua:Sleep(bro)
-     tblua:KeyUp(0x27)
-     elseif blbl == 2 then
-     tblua:KeyDown(0x28)
-     tblua:Sleep(securitydown)
-     tblua:KeyUp(0x28)
-     tblua:KeyDown(0x25)
-     tblua:Sleep(bro)
-     tblua:KeyUp(0x25)
-     end
-     end
-     elseif MovementSwitch == 1 then
-       local Mov1 = math.random(114, 844)
+      if randmov == 1 then
+      if tblua:GetPixelColor(1149, 103) == "0x347984" then
+       local Mov1 = math.random(184, 594)
        tblua:KeyDown(0x25)
        tblua:Sleep(Mov1)
        tblua:KeyUp(0x25)
        t = t + 1
-       local MovS1 = math.random(3)
-       if MovS1 == 1 then
-       MovementSwitch = 2
-       elseif MovS1 == 2 then
-       MovementSwitch = 3
-       elseif MovS1 == 3 then
-       MovementSwitch = 4
+        randmovz = math.random(3)
+        if randmovz == 1 then
+        randmov = 2
+        elseif randmovz == 2 then
+        randmov = 3
+        elseif randmovz == 3 then
+        randmov = 4
+        end
+       else
+        randmovz = math.random(3)
+        if randmovz == 1 then
+        randmov = 2
+        elseif randmovz == 2 then
+        randmov = 3
+        elseif randmovz == 3 then
+        randmov = 4
+        end
        end
-     elseif MovementSwitch == 2 then
-       local Mov2 = math.random(115, 853)
+      elseif randmov == 2 then
+       if tblua:GetPixelColor(1176, 76) == "0x347984" then
+       local Mov2 = math.random(185, 593)
        tblua:KeyDown(0x26)
        tblua:Sleep(Mov2)
        tblua:KeyUp(0x26)
        t = t + 1
-       local MovS2 = math.random(3)
-       if MovS2 == 1 then
-       MovementSwitch = 1
-       elseif MovS2 == 2 then
-       MovementSwitch = 3
-       elseif MovS2 == 3 then
-       MovementSwitch = 4
+        randmovz2 = math.random(3)
+        if randmovz2 == 1 then
+        randmov = 1
+        elseif randmovz2 == 2 then
+        randmov = 3
+        elseif randmovz2 == 3 then
+        randmov = 4
+        end
+       else
+        randmovz2 = math.random(3)
+        if randmovz2 == 1 then
+        randmov = 1
+        elseif randmovz2 == 2 then
+        randmov = 3
+        elseif randmovz2 == 3 then
+        randmov = 4
+        end
        end
-     elseif MovementSwitch == 3 then
-       local Mov3 = math.random(119, 841)
+      elseif randmov == 3 then
+       if tblua:GetPixelColor(1203, 103) == "0x347984" then
+       local Mov3 = math.random(189, 591)
        tblua:KeyDown(0x27)
        tblua:Sleep(Mov3)
        tblua:KeyUp(0x27)
        t = t + 1
-       local MovS3 = math.random(3)
-       if MovS3 == 1 then
-       MovementSwitch = 1
-       elseif MovS3 == 2 then
-       MovementSwitch = 2
-       elseif MovS3 == 3 then
-       MovementSwitch = 4
+        randmovz3 = math.random(3)
+        if randmovz3 == 1 then
+        randmov = 1
+        elseif randmovz3 == 2 then
+        randmov = 2
+        elseif randmovz3 == 3 then
+        randmov = 4
+        end
+       else
+        randmovz3 = math.random(3)
+        if randmovz3 == 1 then
+        randmov = 1
+        elseif randmovz3 == 2 then
+        randmov = 2
+        elseif randmovz3 == 3 then
+        randmov = 4
+        end
        end
-     elseif MovementSwitch == 4 then
-       local Mov4 = math.random(112, 849)
+      elseif randmov == 4 then
+       if tblua:GetPixelColor(1176, 130) == "0x347984" then
+       local Mov4 = math.random(192, 599)
        tblua:KeyDown(0x28)
        tblua:Sleep(Mov4)
        tblua:KeyUp(0x28)
        t = t + 1
-       local MovS4 = math.random(3)
-       if MovS4 == 1 then
-       MovementSwitch = 1
-       elseif MovS4 == 2 then
-       MovementSwitch = 2
-       elseif MovS4 == 3 then
-       MovementSwitch = 3
+        randmovz4 = math.random(3)
+        if randmovz4 == 1 then
+        randmov = 1
+        elseif randmovz4 == 2 then
+        randmov = 2
+        elseif randmovz4 == 3 then
+        randmov = 3
+        end
+       else
+        randmovz4 = math.random(3)
+        if randmovz4 == 1 then
+        randmov = 1
+        elseif randmovz4 == 2 then
+        randmov = 2
+        elseif randmovz4 == 3 then
+        randmov = 3
+        end
        end
+      end
     end
   end
  end
